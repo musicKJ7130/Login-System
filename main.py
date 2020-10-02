@@ -5,7 +5,7 @@ from PIL import ImageTk
 class Login_System:
     def __init__(self, root):
         self.root = root
-        self.root.title('Login')
+        self.root.title('Login System')
         self.root.geometry('1350x700+0+0')
 
         #--------------All Images--------------------------
@@ -23,11 +23,9 @@ class Login_System:
 
         #-----------------------------------------
 
-
-        
         bg_lbl = Label(self.root, image=self.bg_icon).pack()
 
-        title =  Label(self.root, text="Login", font=('times new roman',40,'bold'), bg="skyblue", fg="black", bd=10, relief=GROOVE)
+        title =  Label(self.root, text="Login", font=('Arial',40,'bold'), bg="cyan", fg="black", bd=10, relief=GROOVE)
         title.place(x=0, y=0, relwidth=1)
 
         login_frame = Frame(self.root, bg="white")
@@ -54,12 +52,10 @@ class Login_System:
             messagebox.showinfo("Login Successful", f"Welcome {self.uname.get()}!")
 
         else:
-            messagebox.showerror("Error", "Invalid Username or Password")
+            messagebox.showerror("Error", "Invalid Username or Password! Please try again!")
 
         
   
 root=Tk()
 obj=Login_System(root)
 root.mainloop()
-
-
