@@ -48,7 +48,7 @@ class Login_System:
         if self.uname.get() == "" or self.pas == "":
             messagebox.showerror("Error", "All Fields are Required!")
         
-        elif self.uname.get() == "Karan" and self.pas == "2018" or self.uname.get() == "karan":
+        elif self.uname.get() == "IamHero" and self.pas == "201811" or self.uname.get() == "iamhero":
             messagebox.showinfo("Login Successful", f"Welcome {self.uname.get()}!")
 
         else:
